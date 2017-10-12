@@ -1,0 +1,105 @@
+<html>
+<title>약속잡기</title>
+<style>	
+	
+	@font-face{
+    font-family: 'NanumBarunpenB';
+   src: url(NanumBarunpenB.ttf) format('truetype');
+}
+		@font-face{
+		font-family: 'NanumBarunGothic';
+		font-style: normal;
+		src: url(NanumBarunGothic.ttf);
+	}
+	@font-face{
+		font-family: 'NanumMyeongjo';
+		font-style: normal;
+		src: url(NanumMyeongjo.ttf);
+	}
+			#footer {
+			position: relative;
+			top: 100px;
+			background-color: white;
+			width: 101.2%;
+			height: 100px;
+			clear: both;
+			padding: 0px;
+			margin-left: -8px;
+		}
+		.hrtype{
+			top:-20px;
+			height: 3px;
+			width: 100%;
+			clear: both;
+		}
+
+	h2{font-family: 'NanumBarunGothic'}
+	h1{font-family: 'NanumMyeongjo'}
+	li{color :black; font-family: 'NanumBarunpenB';}
+		#buttonloca{
+			position: relative;
+			left : 10%;
+			top : 10%;
+		}
+		li{color :black;
+			padding: 10px;
+			font-weight: bold;
+			font-family: 'NanumBarunGothic'
+		}
+		a:link{color:black;text-decoration:none; font-weight:bold;}
+		a:visited {color: black; text-decoration: none;}
+		a:hover{color:red; font-weight:bold;}
+
+		#profile{
+			border: 4px solid silver;
+			border-radius: 25px;
+			width: 900px;
+			height: 500px;
+			background-color: white; 
+			margin:auto;
+		}
+		#bigdiv{
+			height:100%;
+			position: relative; 
+			top:30px; 
+		}
+		#tablelocation{
+			position: relative;
+			left: 0%;
+		}
+		td{
+			width:120px;
+			height:50px;
+			text-align:center;
+			font-family: 'NanumBarunGothic';
+			font-weight:bold;
+		}
+		#centerbutton{
+			position: relative;
+			left: 40%;
+			top: 20px;
+		}
+
+</style>
+<body style="background-image: url('back.jpg'); background-repeat: no-repeat;
+background-size: cover;">
+	<div style="height: 100px; ">
+	<a href="index.html"><h1 style="color: white;text-align: center; float: center; position: relative; top: 30px; font-size: 50px";> GH's Homepage </h1></a>
+	
+	</div>
+	<div id="profile">
+		<h2 style="text-align: center; color: white; background-color: silver;"> 약속잡아보기</h2>
+	<form style="text-align: center;">
+		이름 : <input type="text" name="name" size="10"><br>
+		학번 : <input type="text" name="number" size="10" maxlength="10"><br/>
+		전화번호 : <input type="tel" name="tel" size="15" maxlength="11" /><br/>
+		날짜 : <input type="date" name="date" /><br/>
+		시간 : <input type="time" name="time" /><br />
+	</form>
+	<button id="centerbutton"; onclick="alert('제출 완료되었습니다. 검토 후 연락드리겠습니다.')"; style="height: 30px; width: 200px; font-weight: bold; font-family: 'NanumBarunGothic" >완료</button>
+
+	</div>
+
+		
+</body>
+</html>
